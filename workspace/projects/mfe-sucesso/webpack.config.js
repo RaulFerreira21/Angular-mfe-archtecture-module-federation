@@ -5,7 +5,7 @@ module.exports = withModuleFederationPlugin({
   name: 'mfe-sucesso',
 
   exposes: {
-    './Component': './projects/mfe-sucesso/src/app/app.component.ts',
+    './Module': './projects/mfe-sucesso/src/app/components/sucesso/sucesso.module.ts',
   },
 
   shared: {
