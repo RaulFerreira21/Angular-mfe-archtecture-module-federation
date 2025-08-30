@@ -1,44 +1,14 @@
 {
   "users": [
     {
-      "id": "1",
+      "id": 1,
       "name": "João",
       "email": "joao@emaila.com"
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Maria",
       "email": "maria@email.com"
-    },
-    {
-      "id": "ded8",
-      "name": "Teste júnior",
-      "email": "testeJ@email.com"
-    },
-    {
-      "id": "2d35",
-      "name": "nome",
-      "email": "nome@email.com"
-    },
-    {
-      "id": "de10",
-      "name": "teste",
-      "email": "teste@email.com"
-    },
-    {
-      "id": "a7c3",
-      "name": "teste",
-      "email": "teste@email.com"
-    },
-    {
-      "id": "b434",
-      "name": "teste",
-      "email": "teste@email.com"
-    },
-    {
-      "id": "62db",
-      "name": "teste",
-      "email": "email@teste.com"
     }
   ]
 }
