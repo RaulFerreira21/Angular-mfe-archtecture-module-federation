@@ -6,7 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   {
-    path: 'registro',
+    path: 'cadastro',
     loadChildren: () => loadRemoteModule({
       type: 'module',
       remoteEntry: 'http://localhost:4201/remoteEntry.js',
@@ -14,7 +14,7 @@ const routes: Routes = [
     }).then(m => m.FormCadastroModule)
   },
   {
-    path: 'sucesso',
+    path: 'listagem',
     loadChildren: () => loadRemoteModule({
       type: 'module',
       remoteEntry: 'http://localhost:4202/remoteEntry.js',

@@ -23,6 +23,7 @@
       </mat-card-content>
       <mat-card-actions>
         <button class="save-button" mat-raised-button color="primary" [disabled]="userForm.invalid" (click)="onSubmit()">Salvar</button>
+        <a mat-button [routerLink]="'/listagem'">Ver lista de usuários cadastrados</a>
       </mat-card-actions>
       <mat-card-footer *ngIf="showMessage">
         <div [ngClass]="successOrErrorMessage == feedBackMessage.SUCCESS ? 'successMessage' : 'errorMessage'">
