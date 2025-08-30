@@ -1,0 +1,19 @@
+.navigation{
+    a{
+        list-style: none;
+        color: white;
+
+        &:hover{
+            background-color: white;
+            color: black
+        }
+    }
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header{
+    padding: 16px;
+    background-color: #300e0e;
+}

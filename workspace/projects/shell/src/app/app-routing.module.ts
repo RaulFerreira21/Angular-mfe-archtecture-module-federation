@@ -1,6 +1,8 @@
 import { loadRemoteModule } from '@angular-architects/module-federation';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AppComponent } from './app.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   {
@@ -18,6 +20,10 @@ const routes: Routes = [
       remoteEntry: 'http://localhost:4202/remoteEntry.js',
       exposedModule: './Module'
     }).then(m => m.SucessoModule)
+  },
+  {
+    path: '',
+    component: HomeComponent
   }
 ];
 

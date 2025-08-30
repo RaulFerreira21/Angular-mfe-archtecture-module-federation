@@ -1,6 +1,14 @@
-<h1>Aplicação Shell</h1>
-<nav>
-  <a routerLink="/registro">Registro (MFE1)</a> |
-  <a routerLink="/sucesso">Sucesso (MFE2)</a>
-</nav>
+<header>
+  <nav class="navigation">
+    <a mat-button [routerLink]="''">
+      Home
+    </a>
+    <a mat-button [routerLink]="'/registro'">
+      Registro
+    </a>
+    <a mat-button [routerLink]="'/sucesso'">
+      Listagem
+    </a>
+  </nav>
+</header>
 <router-outlet></router-outlet>
