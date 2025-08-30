@@ -1,1 +1,33 @@
-<p>register-user works!</p>
+
+<div class="container">
+    <mat-card class="register-card">
+      <mat-card-header>
+        <mat-card-title>Cadastro de novos usuários</mat-card-title>
+        <mat-card-subtitle>Todos os campos são obrigatórios</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+            <div id="inputName">
+                <mat-form-field appearance="outline" class="input-configuration">
+                    <mat-label>Nome: </mat-label>
+                    <input type="text" matInput placeholder="Digite seu nome" formControlName="name">
+                </mat-form-field>
+            </div>
+            <div id="inputEmail">
+                <mat-form-field appearance="outline" class="input-configuration">
+                    <mat-label>Email: </mat-label>
+                    <input type="email" matInput placeholder="exemplo@email.com" formControlName="email">
+                </mat-form-field>
+            </div>
+        </form>
+      </mat-card-content>
+      <mat-card-actions>
+        <button class="save-button" mat-raised-button color="primary" [disabled]="userForm.invalid" (click)="onSubmit()">Salvar</button>
+      </mat-card-actions>
+      <mat-card-footer *ngIf="showMessage">
+        <div [ngClass]="successOrErrorMessage == feedBackMessage.SUCCESS ? 'successMessage' : 'errorMessage'">
+            {{successOrErrorMessage}}
+        </div>
+      </mat-card-footer>
+    </mat-card>
+</div>
