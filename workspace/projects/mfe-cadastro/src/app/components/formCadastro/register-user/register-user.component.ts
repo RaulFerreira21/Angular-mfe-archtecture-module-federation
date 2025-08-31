@@ -27,7 +27,6 @@ export class RegisterUserComponent {
 
   onSubmit(): void {
     const newUser: Users = this.userForm.value;
-    console.log(newUser, 'novo user');
     this.registerUserService.postUser(newUser).subscribe((data) => {
       this.successOrErrorMessage = data;
       this.showMessage = true;

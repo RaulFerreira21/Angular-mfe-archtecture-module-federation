@@ -9,6 +9,7 @@ import { GetUsersService } from '../../services/get-users.service';
 import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from "@angular/material/card";
 import { MatButtonModule } from "@angular/material/button";
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { MatButtonModule } from "@angular/material/button";
   ],
   imports: [
     CommonModule,
+    RouterModule,
     HttpClientModule,
     SucessoRoutingModule,
     MatTableModule,
